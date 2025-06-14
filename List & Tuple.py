@@ -17,11 +17,13 @@ game.insert(2."chess")
             
 # 2-3. 항목 제거하기 (remove())
 game.remove("chess")
-
+            
 # 2-4. 인덱스로 항목 제거하기 (pop())
+game2=game.pop(0)            
             
 # 2-5. 항목 찾기 (index())
 
+game3=game.index("battlegrounds")
           
 # 3. Tuple (튜플)
 #튜플은 리스트와 비슷하지만, 값이 변경되지 않는 불변 데이터 타입입니다(변경 불가능한(immutable)

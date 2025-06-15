@@ -7,21 +7,35 @@
 # 2. List (리스트)
 # 여러 개의 항목을 순서대로 저장할 수 있는 변경 가능한(mutable) 데이터 타입
 game = ['overwatch', 'roblox', 'battlegrounds']
+print(f"초기 리스트: {game}")
+# 출력: 초기 리스트: ['overwatch', 'roblox', 'battlegrounds']
 
 # 2-1. 항목 추가하기 (append) - 맨 뒤에 추가
 game.append("valorant")
+print(f"append 후: {game}")
+# 출력: append 후: ['overwatch', 'roblox', 'battlegrounds', 'valorant']
 
 # 2-2. 항목 삽입하기 (insert) - 특정 위치에 삽입
 game.insert(2, "chess")
-            
+print(f"insert 후: {game}")
+# 출력: insert 후: ['overwatch', 'roblox', 'chess', 'battlegrounds', 'valorant']
+
 # 2-3. 항목 제거하기 (remove) - 값으로 제거
 game.remove("chess")
-            
+print(f"remove 후: {game}")
+# 출력: remove 후: ['overwatch', 'roblox', 'battlegrounds', 'valorant']
+
 # 2-4. 인덱스로 항목 제거하기 (pop) - 인덱스로 제거
-game.pop(0)            
-            
+removed_item = game.pop(0)
+print(f"pop 후: {game}")
+print(f"제거된 항목: {removed_item}")
+# 출력: pop 후: ['roblox', 'battlegrounds', 'valorant']
+# 출력: 제거된 항목: overwatch
+
 # 2-5. 항목 찾기 (index) - 값의 인덱스 반환
-game.index("battlegrounds")
+index_result = game.index("battlegrounds")
+print(f"'battlegrounds'의 인덱스: {index_result}")
+# 출력: 'battlegrounds'의 인덱스: 1
 
 # 2-6. 리스트 슬라이싱
           

@@ -38,6 +38,21 @@ print(f"'battlegrounds'의 인덱스: {index_result}")
 # 출력: 'battlegrounds'의 인덱스: 1
 
 # 2-6. 리스트 슬라이싱
-          
+#슬라이싱이란[startindex:stopindex:step]로 사용됩니다 예시는 "print(변수명[1:4])"라면 1,2,3이 나오게 됩니다
+#각 항목은 콜론으로 구분한다 예시는 "print(변수명[::2])<----이것은 두개식 건너서 출력하겟다는 것입니다
+
 # 3. Tuple (튜플)
 #튜플은 리스트와 비슷하지만, 값이 변경되지 않는 변경 불가능한(immutable) 데이터 타입입니다.
+#튜플은 소괄호로 정해지며 각 항목은 , 로 구분됩니다
+food=("Mcdonald's 감자튀김","jubajie 감자탕","My mom's 순두부 찌개")
+print(food[1])
+
+
+# 3-1. 항목 찾기 (index) - 값의 인덱스 반환
+index_tuple= food.index("My mom's 순두부 찌개")
+print(index_tuple)
+
+# 3-2. 항목 갯수 세기 (count)
+jake=(1,2,3,1,2,3,1,2,3)
+count= jake.count(1)
+print(count)
